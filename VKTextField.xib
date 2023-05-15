@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.otf">
+            <string>Gotham-Book</string>
+        </array>
+        <array key="GothamNarrow-Book.otf">
+            <string>GothamNarrow-Book</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VKTextField">
+            <connections>
+                <outlet property="arrowDownImage" destination="ice-aT-XhQ" id="pKG-Rj-bme"/>
+                <outlet property="constErrorToUnderline" destination="NXe-2v-nRN" id="3gs-Im-dZo"/>
+                <outlet property="constPlaceholderHeight" destination="tpN-eT-V1e" id="rt1-jX-ANf"/>
+                <outlet property="constPlaceholderToUnderline" destination="KjC-Pa-WAD" id="DNm-Jx-ptX"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yfE-Ly-wF3"/>
+                <outlet property="imgInfo" destination="WRE-Cx-Oza" id="AhU-Ur-6gZ"/>
+                <outlet property="lblError" destination="Av2-rA-b6o" id="nux-dN-iS9"/>
+                <outlet property="lblPlaceholder" destination="YxY-Px-R4X" id="ERk-0t-ddv"/>
+                <outlet property="textField" destination="3IK-pZ-vqJ" id="TMl-B8-my7"/>
+                <outlet property="vImgTapArea" destination="JEK-ex-brC" id="fSc-yE-x4m"/>
+                <outlet property="vUnderline" destination="5MB-YS-cmS" id="7G2-fU-FHf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VKTextField">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6v-Qh-3E1">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxY-Px-R4X">
+                            <rect key="frame" x="0.0" y="27" width="91" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="tpN-eT-V1e"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GothamNarrow-Book" family="Gotham Narrow" pointSize="18"/>
+                            <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3IK-pZ-vqJ">
+                            <rect key="frame" x="0.0" y="27" width="320" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="hdW-Ha-huq"/>
+                            </constraints>
+                            <color key="textColor" red="0.082352941176470587" green="0.29803921568627451" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Gotham-Book" family="Gotham" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5MB-YS-cmS">
+                            <rect key="frame" x="0.0" y="54" width="320" height="1"/>
+                            <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EE4-hP-jLi"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av2-rA-b6o">
+                            <rect key="frame" x="0.0" y="59" width="315" height="13"/>
+                            <fontDescription key="fontDescription" name="GothamNarrow-Book" family="Gotham Narrow" pointSize="13"/>
+                            <color key="textColor" red="1" green="0.23529411764705882" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JEK-ex-brC">
+                            <rect key="frame" x="93" y="24" width="23" height="23"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="infov2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WRE-Cx-Oza">
+                                    <rect key="frame" x="2" y="0.0" width="19" height="19"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="19" id="UhD-Y6-Rwv"/>
+                                        <constraint firstAttribute="width" secondItem="WRE-Cx-Oza" secondAttribute="height" multiplier="1:1" id="oTQ-ql-E3U"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="23" id="1Ur-ed-4Sw"/>
+                                <constraint firstAttribute="height" constant="23" id="Ys2-sL-hZ6"/>
+                                <constraint firstItem="WRE-Cx-Oza" firstAttribute="top" secondItem="JEK-ex-brC" secondAttribute="top" id="ZW7-Bp-PDJ"/>
+                                <constraint firstItem="WRE-Cx-Oza" firstAttribute="leading" secondItem="JEK-ex-brC" secondAttribute="leading" constant="2" id="mba-bQ-7GA"/>
+                            </constraints>
+                        </view>
+                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="ice-aT-XhQ">
+                            <rect key="frame" x="297" y="32.5" width="13" height="7"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="7" id="1UP-d6-eto"/>
+                                <constraint firstAttribute="width" constant="13" id="J0O-V8-zok"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5MB-YS-cmS" firstAttribute="leading" secondItem="f6v-Qh-3E1" secondAttribute="leading" id="4ar-wR-eCm"/>
+                        <constraint firstItem="JEK-ex-brC" firstAttribute="leading" secondItem="YxY-Px-R4X" secondAttribute="trailing" constant="2" id="AGh-vU-YKr"/>
+                        <constraint firstAttribute="trailing" secondItem="ice-aT-XhQ" secondAttribute="trailing" constant="10" id="IW6-hD-six"/>
+                        <constraint firstItem="5MB-YS-cmS" firstAttribute="top" secondItem="YxY-Px-R4X" secondAttribute="bottom" constant="9" id="KjC-Pa-WAD"/>
+                        <constraint firstItem="YxY-Px-R4X" firstAttribute="leading" secondItem="f6v-Qh-3E1" secondAttribute="leading" id="Km1-LA-X1F"/>
+                        <constraint firstItem="Av2-rA-b6o" firstAttribute="top" secondItem="5MB-YS-cmS" secondAttribute="bottom" constant="4" id="NXe-2v-nRN"/>
+                        <constraint firstAttribute="bottom" secondItem="Av2-rA-b6o" secondAttribute="bottom" id="SjA-xA-HdS"/>
+                        <constraint firstAttribute="trailing" secondItem="Av2-rA-b6o" secondAttribute="trailing" constant="5" id="Umb-UK-Zha"/>
+                        <constraint firstItem="3IK-pZ-vqJ" firstAttribute="leading" secondItem="f6v-Qh-3E1" secondAttribute="leading" id="b93-gF-qkp"/>
+                        <constraint firstItem="Av2-rA-b6o" firstAttribute="leading" secondItem="f6v-Qh-3E1" secondAttribute="leading" id="d3u-bV-H3b"/>
+                        <constraint firstItem="JEK-ex-brC" firstAttribute="top" secondItem="3IK-pZ-vqJ" secondAttribute="top" constant="-3" id="igb-Ve-pED"/>
+                        <constraint firstAttribute="trailing" secondItem="3IK-pZ-vqJ" secondAttribute="trailing" id="mHL-dk-eQr"/>
+                        <constraint firstItem="ice-aT-XhQ" firstAttribute="centerY" secondItem="3IK-pZ-vqJ" secondAttribute="centerY" id="piT-cB-HVS"/>
+                        <constraint firstAttribute="trailing" secondItem="5MB-YS-cmS" secondAttribute="trailing" id="uoK-fJ-XPC"/>
+                        <constraint firstItem="5MB-YS-cmS" firstAttribute="top" secondItem="3IK-pZ-vqJ" secondAttribute="bottom" constant="9" id="w04-gX-YrG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="f6v-Qh-3E1" secondAttribute="bottom" id="eud-Zr-oE1"/>
+                <constraint firstItem="f6v-Qh-3E1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fYw-YB-AAh"/>
+                <constraint firstItem="5MB-YS-cmS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="54" id="te2-5x-CGl"/>
+                <constraint firstItem="f6v-Qh-3E1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tp3-y2-ucB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f6v-Qh-3E1" secondAttribute="trailing" id="ysp-ra-Uyl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="123.2" y="231.18440779610197"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow-down.png" width="15" height="10"/>
+        <image name="infov2.png" width="26" height="26"/>
+    </resources>
+</document>
